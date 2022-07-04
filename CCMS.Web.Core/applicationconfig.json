@@ -1,0 +1,31 @@
+{
+  
+  "JWTSettings": {
+    "ValidateIssuerSigningKey": true, // Whether to verify the key, bool type, default true
+    "IssuerSigningKey": "3c1cbc3f546eda35168c3aa3cb91780fbe703f0996c6d123ea96dc85c70bbc0a", // Key, string type, must be a complex key, the length is greater than 16
+    "ValidateIssuer": true, // Whether to verify the issuer, bool type, default true
+    "ValidIssuer": "ccms", // Issuer, string type
+    "ValidateAudience": true, // Whether to verify the signer, bool type, default true
+    "ValidAudience": "ccms", // Signing party, string type
+    "ValidateLifetime": true, // Whether to verify the expiration time, bool type, the default is true, it is recommended to be true
+    "ExpiredTime": 1440, // Expiration time, long type, in minutes, default 20 minutes
+    "ClockSkew": 5 //Expiration time fault tolerance value, long type, in seconds, default 5 seconds
+  },
+  "OAuth": {
+    "Wechat": {
+      "app_id": "wx2959fdd3abc05362",
+      "app_key": "829f65b2be0652bcd50ea8cb820fd7fa",
+      "redirect_uri": "http://127.0.0.1:56868/oauth/wechatcallback",
+      "scope": "snsapi_userinfo"
+    }
+  },
+  "UploadFile": {
+   
+    "Aliyun": {
+      "path": "CCMS/Upload",
+      "maxSize": 1048576,
+      "contentType": [ "image/jpg", "image/png", "image/jpeg", "image/gif", "image/bmp", "text/plain", "application/pdf", "application/msword", "application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation" ]
+    },
+    
+  }
+}

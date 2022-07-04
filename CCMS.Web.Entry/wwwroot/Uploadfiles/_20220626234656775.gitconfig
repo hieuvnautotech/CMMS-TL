@@ -1,0 +1,5 @@
+[user]
+	name = Hieu Nguyen Ngoc
+	email = nnhieu.htb@gmail.com
+[core]
+	editor = \"C:\\Users\\Hieu\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait

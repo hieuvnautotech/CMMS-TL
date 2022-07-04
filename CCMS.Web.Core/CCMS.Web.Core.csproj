@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>CCMS.Web.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\RoleRequirement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CCMS.Web.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CCMS.Application\CCMS.Application.csproj" />
+  </ItemGroup>
+
+</Project>

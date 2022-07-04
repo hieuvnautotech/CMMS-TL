@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>CCMS.Application.xml</DocumentationFile>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Api\StandardDB\NewFolder\**" />
+	  <Compile Remove="Filters\**" />
+	  <Compile Remove="System\**" />
+	  <Compile Remove="Uploadfiles\**" />
+	  <EmbeddedResource Remove="Api\StandardDB\NewFolder\**" />
+	  <EmbeddedResource Remove="Filters\**" />
+	  <EmbeddedResource Remove="System\**" />
+	  <EmbeddedResource Remove="Uploadfiles\**" />
+	  <None Remove="Api\StandardDB\NewFolder\**" />
+	  <None Remove="Filters\**" />
+	  <None Remove="System\**" />
+	  <None Remove="Uploadfiles\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="CCMS.Application.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CCMS.Core\CCMS.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="applicationsettings.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	
+</Project>

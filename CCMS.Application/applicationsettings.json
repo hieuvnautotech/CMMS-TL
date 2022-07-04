@@ -1,0 +1,40 @@
+﻿{
+  "SpecificationDocumentSettings": {
+    "DocumentTitle": "CCMS API",
+    "GroupOpenApiInfos": [
+      {
+        "Group": "Default",
+        "Title": "CCMS API",
+        "Description": "",
+        "Version": "1.0.0",
+        "TermsOfService": ""
+        //"Contact": {
+        //  "Name": "Autonsi",
+        //  "Url": "",
+        //  "Email": ""
+        //},
+        //"License": {
+        //  "Name": "Apache-2.0",
+        //  "Url": ""
+        //}
+      }
+    ]
+  },
+  "Cache": {
+    "CacheType": "MemoryCache", // RedisCache
+    "RedisConnectionString": "127.0.0.1:6379,password=,defaultDatabase=2"
+  },
+  "CorsAccessorSettings": {
+    "WithExposedHeaders": [
+      "access-token",
+      "x-access-token",
+      "environment"
+    ]
+  },
+  "AppDatabaseConfig": {
+    "sqlite": "Data source = ./ccms.db",
+    "mssql": "Data Source=118.69.61.10,1434;user id=sa;password=yCjdw1uUXbCi6QFkBjhVfOCbQsIT1vIux6x6lSQZiTr04TxzEA;Initial Catalog=CCMS_3;Encrypt=False;",
+    "active": 1
+  }
+
+}

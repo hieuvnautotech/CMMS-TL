@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CCMS.Application</name>
+    </assembly>
+    <members>
+        <member name="M:CCMS.Application.Api.AuthController.Login(CCMS.Application.Dtos.Auth.LoginInput)">
+            <summary>
+            Log in vào tài khoản để truy cập dữ liệu trên server
+            </summary>
+        </member>
+        <member name="M:CCMS.Application.Api.AuthController.GetLoginUser">
+            <summary>
+            Get currently logged in user information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CCMS.Application.Api.AuthController.LogoutAsync">
+            <summary>
+            Thoát đăng nhập
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CCMS.Application.Api.StandardDB.SupplierApiController.GetAll(System.String)">
+            <summary>
+            Get all
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CCMS.Application.Api.StandardDB.ToolApiController.GetAll(System.String)">
+            <summary>
+            Get all
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:CCMS.Application.Core.ClaimConst.CLAINM_USERID">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Core.ClaimConst.CLAINM_ACCOUNT">
+            <summary>
+            account
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Core.ClaimConst.CLAINM_NAME">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Core.ClaimConst.CLAINM_SUPERADMIN">
+            <summary>
+            Whether super management
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Dtos.notice.AddNoticeInput.Status">
+            <summary>
+            Status (dictionary 0 draft 1 published 2 withdrawn 3 deleted)
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Dtos.notice.DeleteNoticeInput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Dtos.notice.UpdateNoticeInput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D1000">
+            <summary>
+            Incorrect username or password
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D1001">
+            <summary>
+            Illegal operation! Forbid to delete yourself
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D1002">
+            <summary>
+            The record does not exist
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D1003">
+            <summary>
+            Account already exists
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D1004">
+            <summary>
+            old password does not match
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:CCMS.Application.Enum.ErrorCode.D4000" -->
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4001">
+            <summary>
+            The routing address is empty
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4002">
+            <summary>
+            The open method is empty
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4003">
+            <summary>
+            The permission ID format is empty
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4004">
+            <summary>
+            Permission ID format error
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4005">
+            <summary>
+            Permission does not exist
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4007">
+            <summary>
+            The root node cannot be moved
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D4008">
+            <summary>
+            The root node cannot be moved
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D7000">
+            <summary>
+            Notification announcement status error
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D7001">
+            <summary>
+            Notify that the announcement failed to be deleted
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.ErrorCode.D7002">
+            <summary>
+            Notify announcement edit failed
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.MenuType.DIR">
+            <summary>
+            Folder
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.MenuType.MENU">
+            <summary>
+            menu
+            </summary>
+        </member>
+        <member name="F:CCMS.Application.Enum.MenuType.BTN">
+            <summary>
+            Button
+            </summary>
+        </member>
+        <member name="M:CCMS.Application.Hubs.UserHub.OnConnectedAsync">
+             <summary>
+            user  login webapp 
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:CCMS.Application.Hubs.UserHub.OnDisconnectedAsync(System.Exception)">
+            <summary>
+            disconnect
+            </summary>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CCMS.Application.Services.Notice.ChangeStatusNoticeInput.Status">
+            <summary>
+            Status (dictionary 0 draft 1 published 2 withdrawn 3 deleted)
+            </summary>
+        </member>
+        <member name="M:CCMS.Application.Services.Notice.SysNoticeService.UpdatePublicInfo(CCMS.Application.Dtos.notice.SysNotice)">
+            <summary>
+            Update release information
+            </summary>
+            <param name="notice"></param>
+        </member>
+        <member name="M:CCMS.Application.Services.Notice.SysNoticeService.UnReadNoticeList(CCMS.Application.Dtos.notice.NoticeInput)">
+             <summary>
+            unprocessed message
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.SearchValue">
+            <summary>
+            search value
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.PageNo">
+            <summary>
+            Current page number
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.PageSize">
+            <summary>
+            Page capacity
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.SearchBeginTime">
+            <summary>
+            Search start time
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.SearchEndTime">
+            <summary>
+            Search end time
+            </summary>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.SortOrder">
+             <summary>
+            Sorting method, default ascending order, otherwise descending order (with antd front-end, the agreed parameters are Ascend, Dscend)
+             </summary>
+        </member>
+        <member name="P:CCMS.Application.Services.PageInputBase.DescStr">
+             <summary>
+            Sort in descending order (don't ask me why descend is not desc, the front-end convention parameters are just like this)
+             </summary>
+        </member>
+    </members>
+</doc>
